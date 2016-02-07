@@ -6,4 +6,4 @@ RUN yum -y install tomcat
 ENV NAME=compas
 RUN mkdir /logs
 COPY *.war /usr/share/tomcat/webapps/
-RUN tomcat start
+ENTRYPOINT tomcat start
